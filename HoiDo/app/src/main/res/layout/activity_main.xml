@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:padding="0px"
     android:layout_height="match_parent"
-    tools:context="lightofhope.hoido.MainActivity">
+    android:orientation="vertical"
+    tools:context="lightofhope.hoido.MainActivity"
+    android:weightSum="1">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="horizontal"
+        android:layout_weight="0.16">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/start" />
+
+        <TextView
+            android:id="@+id/txtHoiDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hỏi Đố"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="textStart"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:text="START"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"/>
+</LinearLayout>
